@@ -33,9 +33,6 @@ Pulse-PM is a high-fidelity, interactive Project Management Dashboard designed t
 
 ---
 
-## 💻 How to Run Locally##
-https://pamodirashmila.github.io/Pulse-PM/
-
 
 
 
