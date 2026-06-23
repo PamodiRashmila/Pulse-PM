@@ -34,9 +34,18 @@ Pulse-PM is a high-fidelity, interactive Project Management Dashboard designed t
 ---
 
 ## 💻 How to Run Locally##
+https://pamodirashmila.github.io/Pulse-PM/
 
-1. [Click here to Download the Project ZIP](https://github.com/PamodiRashmila/Pulse-PM/archive/refs/heads/main.zip) directly to your computer.
 
-1. Clone or download this repository.
-2. Open `index.html` in any modern web browser.
-3. Register an account via Firebase Auth or login to view the interactive layout.
+
+
+
+
+
+
+
+
+
+
+
+
