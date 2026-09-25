@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ body {
     width: 100%;
     height: 100vh;
 }
-
 
 .sidebar {
     width: 260px;
@@ -94,7 +92,6 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-
 .main-content {
     flex: 1;
     padding: 40px;
@@ -132,7 +129,6 @@ body {
     color: #64748b;
     font-size: 17px;
 }
-
 
 .primary-btn {
     background-color: #7c69ef;
@@ -216,7 +212,6 @@ body {
     font-weight: 700;
 }
 
-
 .content-grid {
     display: grid;
     grid-template-columns: 1.8fr 1fr;
@@ -267,7 +262,6 @@ body {
     padding: 20px 0;
 }
 
-
 .filter-bar {
     display: flex;
     gap: 15px;
@@ -302,7 +296,6 @@ body {
     font-size: 14px;
     color: #1e293b;
 }
-
 
 .empty-state-container {
     background: #ffffff;
@@ -358,7 +351,6 @@ body {
     box-shadow: 0 4px 12px rgba(124, 105, 239, 0.18);
 }
 
-
 .projects-grid-display {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -408,7 +400,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Three-Dots Menu CSS Implementation */
 .card-menu-container {
     position: relative;
 }
@@ -494,7 +485,6 @@ body {
     font-size: 12px; 
     font-weight: 500; 
 }
-
 
 .modal-overlay {
     position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
@@ -627,7 +617,6 @@ body {
 .cancel-btn:hover {
     background: #e2e8f0;
 }
-
 
 .back-link-btn {
     background: none;
@@ -843,7 +832,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* Custom CSS Bar Chart Layout */
 .bar-chart-axis-container {
     display: flex;
     height: 220px;
@@ -912,7 +900,6 @@ body {
     text-align: center;
 }
 
-/* Custom CSS Conic-Gradient Donut Chart Setup */
 .donut-chart-view {
     display: flex;
     justify-content: center;
@@ -941,7 +928,6 @@ body {
     border-radius: 50%;
 }
 
-/* Legends Global Formatting Elements */
 .chart-legends-row {
     display: flex;
     gap: 15px;
@@ -967,7 +953,6 @@ body {
 .label-green { background-color: #2ecc71; }
 .label-blue { background-color: #6366f1; }
 
-/* Lower Matrix Component Lists */
 .lower-reports-grid {
     grid-template-columns: 1fr 1fr;
 }
@@ -1013,7 +998,6 @@ body {
     transition: width 0.3s ease;
 }
 
-/* Overdue Interactive Cards Stack */
 .overdue-tasks-stack {
     display: flex;
     flex-direction: column;
@@ -1054,11 +1038,11 @@ body {
     font-weight: 600;
     white-space: nowrap;
 }
+
 /* ==========================================================================
    13. MOBILE & TABLET RESPONSIVENESS MEDIA QUERIES
    ========================================================================== */
 
-/* Hamburger Menu Button එක Default එකේදී (Desktop) හංගන්න */
 .hamburger-toggle {
     display: none;
     background: none;
@@ -1072,20 +1056,19 @@ body {
 
 @media (max-width: 992px) {
     body {
-        overflow-y: auto; /* Screen එක කොටු නොකර Scroll වීමට ඉඩ දීම */
+        overflow-y: auto;
         height: auto;
     }
 
     .dashboard-container {
-        flex-direction: column; /* Sidebar එක උඩට සහ Content එක යටට */
+        flex-direction: column;
         height: auto;
     }
 
-    /* 1. Sidebar එක Slide-in Drawer එකක් බවට හැරවීම */
     .sidebar {
         position: fixed;
         top: 0;
-        left: -280px; /* Default එකේදී වමට හංගලා තියෙන්නේ */
+        left: -280px;
         width: 260px;
         height: 100vh;
         z-index: 105;
@@ -1093,12 +1076,10 @@ body {
         box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
     }
 
-    /* JavaScript මඟින් 'open' class එක දැමූ විට Sidebar එක පෙනීම */
     .sidebar.open {
         left: 0;
     }
 
-    /* Sidebar එක ඇරිලා තියෙද්දී පිටුපස අඳුරු කරන Backdrop එක */
     .sidebar-overlay {
         position: fixed;
         top: 0;
@@ -1115,7 +1096,6 @@ body {
         display: block;
     }
 
-   
     .main-content {
         padding: 20px;
         padding-top: 80px; 
@@ -1123,7 +1103,6 @@ body {
         width: 100%;
     }
 
-    
     .content-header {
         position: fixed;
         top: 0;
@@ -1155,7 +1134,6 @@ body {
         text-align: center;
     }
 
-    
     .content-grid, 
     .charts-container-grid,
     .kanban-columns-grid {
@@ -1168,7 +1146,6 @@ body {
         gap: 15px;
     }
 
-    
     .kanban-column {
         min-height: auto;
     }
@@ -1183,7 +1160,6 @@ body {
         padding: 12px;
     }
 
-   
     .modal-card-box {
         width: 90%;
         padding: 20px;
