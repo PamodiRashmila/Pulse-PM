@@ -1,3 +1,6 @@
+/* ==========================================================================
+    1. GLOBAL STYLES & RESET
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +24,9 @@ body {
     background-color: #ffffff;
 }
 
-
+/* ==========================================================================
+    2. LEFT BANNER SECTION (DESKTOP)
+   ========================================================================== */
 .left-banner {
     width: 50%;
     background: linear-gradient(135deg, #8176af 0%, #a38cf7 100%);
@@ -61,7 +66,9 @@ body {
     color: rgba(255, 255, 255, 0.7);
 }
 
-
+/* ==========================================================================
+    3. RIGHT FORM SECTION (DESKTOP)
+   ========================================================================== */
 .right-form-side {
     width: 50%;
     display: flex;
@@ -71,7 +78,6 @@ body {
     padding: 60px;
     position: relative;
 }
-
 
 .tab-container {
     display: flex;
@@ -101,7 +107,6 @@ body {
     color: #1e2229;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
 }
-
 
 .form-wrapper {
     width: 100%;
@@ -156,7 +161,6 @@ body {
     background-color: #ffffff;
 }
 
-
 .submit-btn {
     width: 100%;
     padding: 16px;
@@ -174,4 +178,82 @@ body {
 
 .submit-btn:hover {
     background-color: #6752df;
+}
+
+/* ==========================================================================
+    📱 4. MOBILE & TABLET RESPONSIVENESS (MEDIA QUERY)
+   ========================================================================== */
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 100vh;
+    }
+
+    .left-banner {
+        width: 100% !important;
+        min-height: 240px !important;
+        padding: 30px 24px !important;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 28px !important;
+        margin-bottom: 8px !important;
+        max-width: 100%;
+    }
+
+    .banner-content p {
+        font-size: 14px !important;
+        max-width: 100%;
+    }
+
+    .logo {
+        font-size: 20px !important;
+    }
+
+    .footer-text {
+        display: none;
+    }
+
+    .right-form-side {
+        width: 100% !important;
+        padding: 40px 24px !important;
+        background-color: #ffffff;
+    }
+
+    .right-form-side h2 {
+        font-size: 26px !important;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 14px !important;
+        margin-bottom: 24px !important;
+        text-align: center;
+    }
+
+    .tab-container {
+        margin-bottom: 30px !important;
+    }
+
+    .form-wrapper {
+        max-width: 100% !important;
+    }
+
+    .input-group input {
+        padding: 12px 14px !important;
+        font-size: 14px !important;
+    }
+
+    .submit-btn {
+        padding: 14px !important;
+        font-size: 15px !important;
+    }
 }
